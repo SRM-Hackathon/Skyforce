@@ -27,9 +27,7 @@ import { PlanridePage } from '../pages/planride/planride';
     HelpPage,
     MyProfilePage,
     PlanridePage
-    
->>>>>>> 217b5623da70c87a6a28abd99b6
-  ],
+ ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
