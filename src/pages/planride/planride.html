@@ -14,5 +14,33 @@
 
 
 <ion-content padding>
+<ion-item>
+  <ion-label color="primary" aria-autocomplete="on">From</ion-label>
+  <hr>
+  <hr>
+  
 
+  <ion-input placeholder="Enter Pickup location"></ion-input>
+
+</ion-item>
+<ion-item>
+<ion-label color="primary">To</ion-label>
+<hr>
+<hr>
+
+  <ion-input placeholder="Enter Drop location"></ion-input>
+</ion-item>
+
+<ion-item>
+<ion-label color="primary">Date</ion-label>
+<ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="myDate"></ion-datetime>
+
+</ion-item>
+
+<ion-item>
+ <button ion-button icon-only id="aaa">
+    <ion-icon name="ios-arrow-dropright-outline"></ion-icon>   
+</button>
+</ion-item>
+  
 </ion-content>

@@ -38,6 +38,7 @@ import { PlanridePage } from '../pages/planride/planride';
     ListPage,
     HelpPage,
     MyProfilePage,
+    SettingsPage,
     PlanridePage
   ],
   providers: [
