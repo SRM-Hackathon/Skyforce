@@ -8,7 +8,6 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
- HEAD
 import { SignupPage } from '../pages/signup/signup';
 import { SettingsPage } from '../pages/settings/settings';
 import { HelpPage } from '../pages/help/help';
@@ -21,7 +20,6 @@ import { PlanridePage } from '../pages/planride/planride';
     MyApp,
     HomePage,
     ListPage,
- HEAD
     SignupPage,
     SettingsPage,
     HelpPage,
@@ -36,6 +34,7 @@ import { PlanridePage } from '../pages/planride/planride';
   entryComponents: [
     MyApp,
     HomePage,
+    SignupPage,
     ListPage,
     HelpPage,
     MyProfilePage,

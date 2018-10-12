@@ -7,7 +7,6 @@ import { SignupPage } from '../signup/signup';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  email:string;
   username : string;
   password : string;
   constructor(public navCtrl: NavController) {
