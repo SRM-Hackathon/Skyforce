@@ -39,13 +39,9 @@ import { PlanridePage } from '../pages/planride/planride';
     MyApp,
     HomePage,
     ListPage,
-<<<<<<< HEAD
-    SignupPage
-=======
     HelpPage,
     MyProfilePage,
     PlanridePage
->>>>>>> 217b5623da70c87a6a28abd99b6eb9eda09c2a0d
   ],
   providers: [
     StatusBar,
