@@ -8,22 +8,24 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { SignupPage } from '../pages/signup/signup';
 import { SettingsPage } from '../pages/settings/settings';
 import { HelpPage } from '../pages/help/help';
 import { MyProfilePage } from '../pages/my-profile/my-profile';
 import { PlanridePage } from '../pages/planride/planride';
+
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage,
+    SignupPage,
     SettingsPage,
     HelpPage,
     MyProfilePage,
     PlanridePage
-    
-  ],
+ ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
@@ -32,6 +34,7 @@ import { PlanridePage } from '../pages/planride/planride';
   entryComponents: [
     MyApp,
     HomePage,
+    SignupPage,
     ListPage,
     HelpPage,
     MyProfilePage,
