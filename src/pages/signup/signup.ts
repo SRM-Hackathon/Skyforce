@@ -26,8 +26,8 @@ export class SignupPage {
     console.log('ionViewDidLoad SignupPage');
   }
   signup()
-  {
-    alert("successfull");
+  {if(this.email.length==0 || this.username.length==0 ||this.password.length==0 ||this.confirmpassword.length==0)
+    alert("enter all fields");
 
 }
-}
+}  
