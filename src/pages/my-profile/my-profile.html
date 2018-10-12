@@ -17,5 +17,44 @@
 
 
 <ion-content padding>
+    <ion-icon name="contact"></ion-icon>
+    <ion-label><b>Username</b></ion-label>
+  <hr>
+    
+    <ion-label>Name</ion-label>
+  <hr>
+    <ion-input type="texts" placeholder="Name"></ion-input>
+  <hr>
+    <ion-label>Email-id</ion-label>
+    <hr>
+    <ion-input type="email" placeholder="Email-id"></ion-input>
+   <hr> 
+    <ion-label>Phone number</ion-label>
+    <hr>
+    <ion-input type="number" placeholder="Contact number"></ion-input>
+   <hr>
+    <ion-label>Gender</ion-label>
+    <hr>
+    <ion-list radio-group [(ngModel)]="gender">
+        <ion-item>
+          <ion-label>Female</ion-label>
+          <ion-radio value="female" checked></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Male</ion-label>
+          <ion-radio value="male"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Others</ion-label>
+          <ion-radio value="others"></ion-radio>
+        </ion-item>
+      </ion-list>
+      
+    
+    
+
+      s
+
+ 
 
 </ion-content>
