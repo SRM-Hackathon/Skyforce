@@ -15,6 +15,11 @@ import { MyProfilePage } from '../pages/my-profile/my-profile';
 import { PlanridePage } from '../pages/planride/planride';
 
 
+import {AngularFireModule} from 'angularfire2'
+import {AngularFireDatabaseModule} from 'angularfire2/database'
+import { FIREBASE_CREDENTIALS } from './firebase.credentials';
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -29,6 +34,9 @@ import { PlanridePage } from '../pages/planride/planride';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(FIREBASE_CREDENTIALS),
+    AngularFireDatabaseModule,
+    
   ],
   bootstrap: [IonicApp],
   entryComponents: [
