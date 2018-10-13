@@ -32,4 +32,7 @@ search  (){
 ionViewDidLoad() {
   console.log('ionViewDidLoad PlanridePage');
 }
+go(){
+  this.navCtrl.push(ListPage);
+}
 }
