@@ -4,6 +4,7 @@ import { AngularFireDatabase } from 'angularfire2/database';
 import firebase from 'firebase';
 import { from } from 'rxjs/observable/from';
 import { ListPage } from '../list/list';
+import { TravekPage } from '../travek/travek';
 
 /**
  * Generated class for the PlanridePage page.
@@ -33,6 +34,6 @@ ionViewDidLoad() {
   console.log('ionViewDidLoad PlanridePage');
 }
 go(){
-  this.navCtrl.push(ListPage);
+  this.navCtrl.push(TravekPage);
 }
 }

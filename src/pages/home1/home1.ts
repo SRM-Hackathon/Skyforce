@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ListPage } from '../list/list';
+import { TravekPage } from '../travek/travek';
 
 /**
  * Generated class for the Home1Page page.
@@ -23,7 +24,7 @@ export class Home1Page {
     console.log('ionViewDidLoad Home1Page');
   }
   go(){
-    this.navCtrl.push(ListPage);
+    this.navCtrl.push(TravekPage);
   }
 
 }
