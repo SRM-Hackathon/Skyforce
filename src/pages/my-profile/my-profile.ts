@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AngularFireDatabase } from 'angularfire2/database';
+import firebase from 'firebase';
+
 
 /**
  * Generated class for the MyProfilePage page.
@@ -15,11 +18,28 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MyProfilePage {
   a : String ="hi";
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  
+  
+  constructor(public navCtrl: NavController, public navParams: NavParams,public afdb : AngularFireDatabase) {
+    firebase.database().ref('/site/').orderByChild('name').equalTo("ae").once('value').then(function(snapshot) {
+      var username = snapshot.val();
+      
+      console.log(username)
+    });
+  
+    /*this.afdb.list("/site/").valueChanges().subscribe(_data=>{
+    this.arr= _data
+  })*/
+
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MyProfilePage');
+    firebase.database().ref('/site/').orderByChild('name').equalTo("ae").once('value').then(function(snapshot) {
+      var username = snapshot.val();
+      
+      console.log(username.split +"Firebase")
+    });
   }
 
 }
