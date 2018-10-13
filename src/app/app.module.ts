@@ -18,6 +18,7 @@ import { PlanridePage } from '../pages/planride/planride';
 import {AngularFireModule} from 'angularfire2'
 import {AngularFireDatabaseModule} from 'angularfire2/database'
 import { FIREBASE_CREDENTIALS } from './firebase.credentials';
+import { Home1Page } from '../pages/home1/home1';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { FIREBASE_CREDENTIALS } from './firebase.credentials';
     SettingsPage,
     HelpPage,
     MyProfilePage,
-    PlanridePage
+    PlanridePage,
+    Home1Page
  ],
   imports: [
     BrowserModule,
@@ -41,6 +43,7 @@ import { FIREBASE_CREDENTIALS } from './firebase.credentials';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    Home1Page,
     HomePage,
     SignupPage,
     ListPage,

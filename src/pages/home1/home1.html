@@ -1,40 +1,46 @@
 <!--
-  Generated template for the Home1Page page.
+  Generated template for the PlanridePage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>home1</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
-<ion-content padding>
-    <ion-card>
-        <ion-list>
-          <ion-label>From</ion-label>
-            
-            <ion-input type="text" item-start>
-          
-        
-        </ion-list>
-        <ion-list>
-            <ion-label>To</ion-label>
-              
-              <ion-input type="text" item-start>
-            
-          
-          </ion-list>
-        <ion-list>
-            <button ion-item (click)="go()">
-              <ion-icon name="search" item-start ></ion-icon>Language settings
-            </button>
-          
-          </ion-list>
-          
-        </ion-card>
-</ion-content>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+      <ion-title>Planride</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+  <ion-item>
+    <ion-label color="primary" aria-autocomplete="on">From</ion-label>
+    <hr>
+    <hr>
+    
+  
+    <ion-input placeholder="Enter Pickup location" [(ngModel)]="from"></ion-input>
+  
+  </ion-item>
+  <ion-item>
+  <ion-label color="primary">To</ion-label>
+  <hr>
+  <hr>
+  
+    <ion-input placeholder="Enter Drop location" [(ngModel)]="to"></ion-input>
+  </ion-item>
+  
+  
+  
+  <ion-item>
+   <button ion-button icon-only id="aaa" (click)="go()">
+      <ion-icon name="ios-arrow-dropright-outline" ></ion-icon>   
+  </button>
+  </ion-item>
+    
+  </ion-content>
+  
