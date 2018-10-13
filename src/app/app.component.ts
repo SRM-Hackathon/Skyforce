@@ -30,11 +30,7 @@ export class MyApp {
       { title: 'Plan your Ride', component: PlanridePage },
       { title: 'My Profile', component: MyProfilePage },
       { title: 'Settings', component: SettingsPage },
-      { title: 'Help', component: HelpPage }
-      
-      
-      
-      
+      { title: 'Help', component: HelpPage }    
       
     ];
 

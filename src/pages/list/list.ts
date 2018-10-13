@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, DateTime } from 'ionic-angular';
 
 @Component({
   selector: 'page-list',
@@ -19,9 +19,10 @@ export class ListPage {
 
     this.items = [];
     for (let i = 1; i < 11; i++) {
+    
       this.items.push({
-        title: 'Trip ' + i,
-        note: 'Date ' + i,
+        title: 'Bus No ' + i,
+        note: 'Date :' + i,
         notes: 'Time ' + i,
         icon: 'bus'
       });

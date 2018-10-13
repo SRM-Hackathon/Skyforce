@@ -15,8 +15,6 @@ export class HomePage {
   }
   login()
   {
-  console.log("username:"+this.username);
-  console.log("password:"+this.password);
   this.navCtrl.setRoot(MyProfilePage);
   }
   goSignup()

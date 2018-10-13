@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AngularFireDatabase } from 'angularfire2/database';
+import firebase from 'firebase';
+import { from } from 'rxjs/observable/from';
+import { ListPage } from '../list/list';
 
 /**
  * Generated class for the PlanridePage page.
@@ -13,13 +17,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   selector: 'page-planride',
   templateUrl: 'planride.html',
 })
+
 export class PlanridePage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  from ='';
+  to ='';
+  time ='';
+  private listref=this.database.list('site');
+  constructor(public navCtrl: NavController, public navParams: NavParams,private database:AngularFireDatabase) {
+    
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PlanridePage');
-  }
-
+search  (){
+  this.navCtrl.push(ListPage);  
+}
+ionViewDidLoad() {
+  console.log('ionViewDidLoad PlanridePage');
+}
 }
